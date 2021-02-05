@@ -1,10 +1,11 @@
 import "./App.css";
+import ShoppingCard from "./components/ShoppingCard";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>En contrucción...</p>
+        <ShoppingCard />
       </header>
     </div>
   );
