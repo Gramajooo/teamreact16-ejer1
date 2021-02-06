@@ -1,13 +1,15 @@
 import "./App.css";
-import ShoppingCard from "./components/ShoppingCard";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import ContainerCart from "./components/ContainerCart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ShoppingCard />
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        {/* <Route exact path="/" component={Home} /> */}
+        <Route exact path="/Cart" component={ContainerCart} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
